@@ -10,7 +10,6 @@ import java.util.List;
 public class AddressBookFileIO {
     public static void writeData(List<ContactPerson> addressBook,String filename) {
 
-
             StringBuffer addressBookBuffer = new StringBuffer();
             addressBook.forEach(ContactPerson -> {
                 String addressBookString = ContactPerson.toString().concat("\n");
@@ -65,5 +64,6 @@ public class AddressBookFileIO {
             catch(IOException e) {e.printStackTrace();};
             return entries;
         }
+
 
     }
